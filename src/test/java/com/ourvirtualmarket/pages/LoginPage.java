@@ -7,8 +7,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage {
 
-    // helle from ferid branch
-
     @FindBy(css = "#email" )
     public WebElement userEmailInputBox;
     @FindBy(css = "#pass")

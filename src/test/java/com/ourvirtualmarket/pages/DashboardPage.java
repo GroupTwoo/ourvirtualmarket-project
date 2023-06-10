@@ -5,8 +5,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class DashboardPage extends BasePage{
 
-    //git deneme dashboardpage
-
     @FindBy(xpath = "//button[@title='Close']")
     public WebElement closeButton;
 
