@@ -1,1 +1,2 @@
 Feature: Logout
+    Background:
