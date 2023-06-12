@@ -14,6 +14,8 @@ public class Login_StepDefs {
     LoginPage loginPage = new LoginPage();
     DashboardPage dashboardPage = new DashboardPage();
 
+   //örnek
+
     @Given("The user is on the login page")
     public void the_user_is_on_the_login_page() {
         String url= ConfigurationReader.get("url");
