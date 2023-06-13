@@ -11,6 +11,12 @@ public class DashboardPage extends BasePage{
     @FindBy(xpath ="//a[@class='link-lg']" )
     public WebElement loginButton;
 
+    @FindBy(xpath ="//a[text()=' Logout ']" )
+    public WebElement logoutButton;
+
+    @FindBy(css = ".lazyautosizes.lazyloaded")
+    public WebElement yourStoreBtn;
+
     public void closePopUp(){
         closeButton.click();
     }
