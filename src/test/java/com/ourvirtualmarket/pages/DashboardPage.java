@@ -11,6 +11,7 @@ public class DashboardPage extends BasePage{
     @FindBy(xpath ="//a[@class='link-lg']" )
     public WebElement loginButton;
 
+
     public void closePopUp(){
         closeButton.click();
     }
