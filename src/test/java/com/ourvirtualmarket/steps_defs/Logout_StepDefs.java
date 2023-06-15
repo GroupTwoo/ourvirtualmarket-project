@@ -3,8 +3,10 @@ package com.ourvirtualmarket.steps_defs;
 import com.ourvirtualmarket.pages.AccountLogoutPage;
 import com.ourvirtualmarket.pages.DashboardPage;
 import com.ourvirtualmarket.pages.MyAccountPage;
+import com.ourvirtualmarket.pages.ProductsPage;
 import com.ourvirtualmarket.utilities.BrowserUtils;
 import com.ourvirtualmarket.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -16,8 +18,9 @@ public class Logout_StepDefs {
     DashboardPage dashboardPage;
     AccountLogoutPage logoutPage;
     MyAccountPage myAccountPage;
+    ProductsPage productsPage;
 
-    @Given("Click the Logout button at the top right corner")
+    @Given("The user click the Logout button at the top right corner")
     public void click_the_logout_button_at_the_top_right_corner() {
        dashboardPage=new DashboardPage();
        dashboardPage.logout();
@@ -47,7 +50,7 @@ public class Logout_StepDefs {
         BrowserUtils.waitFor(3);
 
     }
-    @Then("Go back to previous page")
+    @Then("The user go back to previous page")
     public void go_back_to_previous_page() {
         logoutPage =new AccountLogoutPage();
         logoutPage.goBackPreviousPage();
@@ -70,7 +73,7 @@ public class Logout_StepDefs {
     }
 
 
-    @Given("Click the Logout button at the down right of the page")
+    @Given("The user click the Logout button at the down right of the page")
     public void clickTheLogoutButtonAtTheDownRightOfThePage() {
         myAccountPage =new MyAccountPage();
         BrowserUtils.clickWithJS(myAccountPage.alternativeLogoutButton);
@@ -80,5 +83,12 @@ public class Logout_StepDefs {
     public void theUserGoToTheModule(String tab) {
         dashboardPage=new DashboardPage();
         dashboardPage.navigateToModule(tab);
+    }
+
+    @And("The user select the {string} product")
+    public void theUserSelectTheProduct(String productName) {
+        productsPage = new ProductsPage();
+        productsPage.navigateToProduct(productName);
+
     }
 }
