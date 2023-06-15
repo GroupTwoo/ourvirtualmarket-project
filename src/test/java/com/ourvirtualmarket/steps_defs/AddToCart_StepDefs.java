@@ -22,18 +22,9 @@ public class AddToCart_StepDefs {
     public void the_user_select_the_third_product() {
 
     }
-    @Then("The user should be able to see product details page")
-    public void the_user_should_be_able_to_see_product_details_page() {
-
-    }
-    @Then("The user should be able to see product name, price, availability status, and views")
-    public void the_user_should_be_able_to_see_product_name_price_availability_status_and_views() {
-
-    }
-    @Then("The user should be able to see add to cart button and buy now button next to the product")
-    public void the_user_should_be_able_to_see_add_to_cart_button_and_buy_now_button_next_to_the_product() {
-
-    }
+   
+    
+  
     @When("The user clicks add to cart button")
     public void the_user_clicks_add_to_cart_button() {
 
