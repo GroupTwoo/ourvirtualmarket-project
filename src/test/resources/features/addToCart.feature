@@ -11,9 +11,9 @@ Feature: Add to Cart
     Given The user is on the homepage
     When The user go to the Networking module
     And The user select the third product
-    Then The product details page is displayed
-    And The product name, price, availability status, and views are shown
-    And The add to cart button and buy now button is displayed next to the product
+    Then The user should be able to see product details page
+    And The user should be able to see product name, price, availability status, and views
+    And The user should be able to see add to cart button and buy now button next to the product
     When The user clicks add to cart button
     Then The user should be able to see the pop up page about added product
     When The user navigates to shopping cart icon on dashboard page
