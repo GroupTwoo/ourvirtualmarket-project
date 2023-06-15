@@ -1,5 +1,4 @@
-@GoToTop
-Feature: Go to top page with button
+
 
   Background: Go to home page
     Given The user on the home page
