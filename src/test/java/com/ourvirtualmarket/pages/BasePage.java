@@ -59,9 +59,15 @@ public abstract class BasePage {
      @see <a href = "https://ourvirtualmarket.com/">Our Virtual Market</a>
      *  */
     public void navigateToModule(String tab){
-        Driver.get().findElement(By.xpath("//li/a/strong[contains(.,'Networking')]")).click();
+        Driver.get().findElement(By.xpath("//li/a/strong[contains(.,'"+tab+"')]")).click();
     }
 
+    /**
+     <h1> Logout </h1>
+     @return hesaptan çıkış yapmak için kullanılır
+     @author Emre
+     @see <a href = "https://ourvirtualmarket.com/">Our Virtual Market</a>
+      *  */
     public void logout(){
         BrowserUtils.waitForClickablility(logoutButton,5);
         logoutButton.click();
