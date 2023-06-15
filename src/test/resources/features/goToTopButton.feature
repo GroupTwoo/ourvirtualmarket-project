@@ -1,5 +1,3 @@
-
-
   Background: Go to home page
     Given The user on the home page
     And The user close the pop-up
